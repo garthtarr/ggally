@@ -373,10 +373,9 @@ ggally_cor <- function(
 
     p <- ggally_text(
       label = paste(
-        "Corr:\n",
         signif(
           cor_fn(xVal,yVal),
-          3
+          2
         ),
         sep="",collapse=""
       ),
