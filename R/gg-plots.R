@@ -372,7 +372,7 @@ ggally_cor <- function(
     yrange <- c(ymin - 0.01 * (ymax - ymin), ymax + 0.01 * (ymax - ymin))
 
     p <- ggally_text(
-      label = paste(
+      label = paste("r = ",
         signif(
           cor_fn(xVal,yVal),
           2
@@ -386,7 +386,7 @@ ggally_cor <- function(
       yrange = yrange,
       ...
     ) +
-    #element_bw() +
+    element_bw() +
     theme(legend.position = "none")
 
     p$type <- "continuous"
