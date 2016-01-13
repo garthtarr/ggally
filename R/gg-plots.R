@@ -107,7 +107,9 @@ ggally_density <- function(data, mapping, ...){
       data = data.frame(rangeX = rangeX, rangeY = rangeY),
       mapping = aes(x = rangeX, y = rangeY),
       alpha = 0
-    )
+    ) + theme(axis.line=element_blank(),
+        axis.text=element_blank(),
+        axis.ticks=element_blank())
 
   if(!is.null(mapping$fill)) {
     p <- p + stat_density2d(mapping = mapping, geom = "polygon", ...)
