@@ -384,9 +384,10 @@ ggally_cor <- function(
       yP=0.5,
       xrange = xrange,
       yrange = yrange,
+      color   = "black",
       ...
     ) +
-    element_bw() +
+    #element_bw() +
     theme(legend.position = "none")
 
     p$type <- "continuous"
