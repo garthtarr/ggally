@@ -382,6 +382,10 @@ ggally_cor <- function(
                     signif(
                       cor_fn(xVal,yVal)^2,
                       2
+                    ),"\nn = ",
+                    signif(
+                      min(length(na.omit(xVal)),length(na.omit(yVal))),
+                      3
                     ),
                     sep="",collapse=""
       ),
