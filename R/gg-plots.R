@@ -378,13 +378,11 @@ ggally_cor <- function(
         signif(
           cor_fn(xVal,yVal),
           2
-        ),"\n R2 = ",
+        ),"\n", expression(R^2)," = ",
         signif(
           cor_fn(xVal,yVal)^2,
           2
         ),
-        sep="",collapse=""
-      ),
       mapping,
       xP=0.5,
       yP=0.5,
