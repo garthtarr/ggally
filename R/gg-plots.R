@@ -374,17 +374,17 @@ ggally_cor <- function(
     yrange <- c(ymin - 0.01 * (ymax - ymin), ymax + 0.01 * (ymax - ymin))
 
     p <- ggally_text(
-      label = paste("r = ",
+      label = expression(paste("r = ",
         signif(
           cor_fn(xVal,yVal),
           2
-        ),"\n", expression(R^2)," = ",
+        ),"\n", R^2," = ",
         signif(
           cor_fn(xVal,yVal)^2,
           2
         ),
         sep="",collapse=""
-      ),
+      )),
       mapping,
       xP=0.5,
       yP=0.5,
