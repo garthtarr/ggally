@@ -378,7 +378,7 @@ ggally_cor <- function(
         signif(
           cor_fn(xVal,yVal),
           2
-        ),"\n", R^2," = ",
+        ),"\n ", R^{2}," = ",
         signif(
           cor_fn(xVal,yVal)^2,
           2
